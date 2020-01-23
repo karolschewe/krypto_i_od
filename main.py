@@ -3,7 +3,7 @@
 # Totient Function
 
 # Function to return
-# gcd of a and b
+# najwiekszy wspolny dzielnik
 def gcd(a, b):
     if (a == 0):
         return b
