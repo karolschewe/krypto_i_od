@@ -36,23 +36,24 @@ def getGenerators(n):
             if powers == n - 1:
                 generators.append(ints)
     return generators
-# print("generatory wielokrotnosci 4 i 6 i 9 i 10 i 14")
-# print(getGenerators(4*6*9*10*14))
-# # wielokrotnosci 4 i 6 i 9 i 10 i 14nie maja generatorow
-# # grupa n powinna miec phi(phi(n)) generatorow
-# print(getGenerators(5))
-# print("liczba generatorow 5:")
-#
-# print(phi(phi(5)))
-# print(getGenerators(17))
-# print("liczba generatorow 17:")
-# print(phi(phi(17)))
-#
-# print(phi(5))
-print(phi(phi(13)))
-print(getGenerators(19))
+if __name__ == '__main__':
+    print("generatory wielokrotnosci 4 i 6 i 9 i 10 i 14")
+    print(getGenerators(4 * 6 * 9 * 10 * 14))
+    # wielokrotnosci 4 i 6 i 9 i 10 i 14nie maja generatorow
+    # grupa n powinna miec phi(phi(n)) generatorow
+    print(getGenerators(5))
+    print("liczba generatorow 5:")
 
-# print(phi(5358))
-# print(phi(1656))
-print(phi(3458))
-print(phi(1296))
+    print(phi(phi(5)))
+    print(getGenerators(17))
+    print("liczba generatorow 17:")
+    print(phi(phi(17)))
+
+    print(phi(5))
+    print(phi(phi(13)))
+    print(getGenerators(19))
+
+    print(phi(5358))
+    print(phi(1656))
+    print(phi(3458))
+    print(phi(1296))
