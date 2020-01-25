@@ -1,12 +1,13 @@
-
 '''
-Prawdopodobienstwo oszustwa przy uwierzytelnieniu z fiata-shamira wynosi 2^-kt
+Prawdopodobienstwo oszustwa przy uwierzytelnieniu z fiata-shamira wynosi 2^-t
 gdzie: t jest liczbą powtórzeń algorytmu
-a k jest dlugoscia sekretu
 '''
+t = 10
 
-
-
+while 2**t < 10**1000:
+    t = t + 1
+print(t)
+# wynik 3322 powtorzenia
 '''
 algorytm dzielenia tajemicy shamira polega na wybraniu liczby n osob do podzialu
 nastepnie wybieramy liczbe pierwsza p
@@ -35,3 +36,5 @@ for i in x:
     sumka += iloczynek
 
 print(f'tajemnica: {sumka%modulko}')
+
+

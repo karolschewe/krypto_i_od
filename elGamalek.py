@@ -25,7 +25,7 @@ k_odwrotnosc = odwrotnosc.odwrotnosc_modulo(k,p-1)
 # w koncu wyznaczmy a
 a = (g**k) % p
 #oraz b
-b = (5 * (4 - (3 * (a % (p-1))) % (p-1)) % (p-1)) % (p-1)
+b = (k_odwrotnosc * (m - (x * (a % (p-1))) % (p-1)) % (p-1)) % (p-1)
 print(f'a: {a}')
 print(f'b: {b}')
 
